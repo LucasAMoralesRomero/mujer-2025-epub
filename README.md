@@ -1,136 +1,48 @@
-# <p align="center">PDF Flipbook</p>
+# 📖 Antologia Mujer 2025
 
-<https://pdfflipbook.vercel.app> - Demo
+Este proyecto es una implementación basada en [pdf-flipbook](https://github.com/BrayanBM/pdf-flipbook), diseñada para visualizar documentos EPUB y PDF en formato flipbook con una interfaz atractiva.
 
----
+## 🚀 Características
 
-## Documentation
+- Visualización interactiva de documentos EPUB y PDF.
+- Compatible con dispositivos móviles y de escritorio.
+- Personalización mediante estilos CSS.
+- Implementación ligera y rápida.
 
-### Q) Flipbook pages are not visible/defective in PDF
+## 📂 Estructura del Proyecto
 
-Check the pdf if using the link Make sure that cross-origin resource sharing is enabled
+```plaintext
+mujer-2025-epub-main/
+│── lib/                 # Archivos de soporte (CSS, fuentes, scripts)
+│── index.html           # Página principal de la aplicación
+│── netlify.toml         # Configuración para despliegue en Netlify
+│── LICENSE              # Licencia del proyecto (MIT)
+│── README.md            # Este archivo
+│── .gitignore           # Archivos a ignorar en Git
 
-## File Structure
+🛠 Instalación y Uso
 
-This flipbook plugin is jQuery-based. Basically, you can copy the files in folder to your working directory. You don't need to include the lib folder..
+1️⃣ Clonar el repositorio
 
-```
-lib/ 
-    ├── css/
-    │   ├── min.css
-    │   └── themify-icons.css
-    │
-    ├── fonts/
-    │   ├── themify.eot
-    │   ├── themify.svg
-    │   ├── themify.ttf
-    │   └── themify.woff
-    │
-    ├── images/
-    │   └── loading.gif
-    |
-    ├── sound/
-    │   └── turn2.mp3
-    │
-    └── js/
-        ├── flip.js
-        └── libs/
-            ├── jquery.min.js
-            ├── pdf.min.js
-            ├── pdf.worker.min.js
-            ├── three.min.js
-            └── mockup.min.js
+git clone https://github.com/tu-usuario/mujer-2025-epub.git
+cd mujer-2025-epub
 
-```
+2️⃣ Abrir en un navegador
 
-## File Template
+Simplemente abre index.html en tu navegador para ver el visor en acción.
 
-And ensure the following files are included in the html.
+3️⃣ Opcional: Desplegar en Netlify
 
-### CSS
-
-```
-            
-<!-- Flipbook StyleSheet -->
-<link href="http://www.yoursite.com/lib/css/min.css" rel="stylesheet" type="text/css">
-
-<!-- Icons Stylesheet -->
-  <link href="http://www.yoursite.com/lib/css/themify-icons.css" rel="stylesheet" type="text css">
-            
-        
-```
-
-### JavaScript
-
-Note: Include them just before </body> tag. Don't use them in head.
-
-```
-            
-<!-- jQuery 1.9.1 or above -->
-
-<script src="http://www.yoursite.com/lib/js/libs/jquery.min.js" type="text/javascript"></script>
+Configura el repositorio en Netlify y usa netlify.toml para la configuración.
 
 
-<!-- Flipbook main Js file -->
+📜 Licencia
 
-<script src="http://www.yoursite.com/lib/js/flip.min.js" type="text/javascript"></script>
-            
-        
-```
+Este proyecto está bajo la licencia MIT, cuyo titular de derechos de autor es HiIamChaitanya.
+Consulta el archivo LICENSE para más detalles.
 
-Basic HTML Template
+🙌 Créditos
 
-```
+Basado en el proyecto pdf-flipbook.
 
-<html>
-   <head>
-       <meta charset="utf-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       
-          <title>Basic HTML Template</title>
-
-     <!-- Flipbook StyleSheet -->
-      <link href="http://www.yoursite.com/lib/css/min.css" rel="stylesheet" type="text/css">
-
-     <!-- Icons Stylesheet -->
-     <link href="http://www.yoursite.com/lib/css/themify-icons.css" rel="stylesheet" type="text/css">
-
-   </head>
-    <body>
-    <div class="_df_thumb" id="df_manual_thumb" source="location of pdf.pdf" thumb="location of thumbnail.jpg"> PDF Example</div >
-    <!-- Refer to other examples on how to create different types of flipbook -->
-
-    <!-- jQuery 1.9.1 or above -->
-    <script src="http://www.yoursite.com/lib/js/libs/jquery.min.js" type="text/javascript"></script>
-
-    <!-- Flipbook main Js file -->
-    <script src="http://www.yoursite.com/lib/js/flip.min.js" type="text/javascript"></script>
-
-    </body>
-    </html>
-```
-
-Create Flipbook through Button lightbox.
-
-```
-<div class="_df_button"
-    source="http://www.yoursite.com/file.pdf"
-    id="df_manual_button">
-    Button
-</div>
-```
----
-### Contributors
-
-- [@HiIamChaitanya](https://www.github.com/HiIamChaitanya)
-
----
-
-### Acknowledgements
-
-- [pdf.js]()
-- [three.js]()
-- [jquery]()
-- [dflip]()
-
----
+Desarrollado y adaptado por Lucas Agustín Morales Romero.
